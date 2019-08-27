@@ -21,7 +21,7 @@ Policies are dictionaries that at the root level consist of different categories
 Each category can further split into subcategories that describe parts of that category.
 
 ```python
-{
+{websocket_api
   "entities": {
     "domains": …,
     "entity_ids": …
@@ -252,7 +252,7 @@ user via `connection.user`. If you need to check admin access, you can use the
 built-in `@require_admin` decorator.
 
 ```python
-from homeassistant.compnents import websocket_api
+from homeassistant.components import websocket_api
 
 
 async def async_setup(hass, config):
